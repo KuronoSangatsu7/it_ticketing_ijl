@@ -1,6 +1,6 @@
 {
     "name": "it_ticketing_ijl",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Ticketing for an IT department",
     "main": "./src/index.tsx",
     "scripts": {
