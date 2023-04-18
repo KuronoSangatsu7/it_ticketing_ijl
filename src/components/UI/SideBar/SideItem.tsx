@@ -35,7 +35,7 @@ export default function SideItem({
 			alignSelf="end"
 			_hover={{}}
 		>
-			<Icon as={activeIcon} color="whiteAlpha.900" h="35px" w="35px" />
+			<Icon data-testid="active-icon" as={activeIcon} color="whiteAlpha.900" h="35px" w="35px" />
 		</Link>
 	) : (
 		<Link
@@ -51,7 +51,7 @@ export default function SideItem({
 			alignSelf="center"
 			_hover={{}}
 		>
-			<Icon as={inactiveIcon} color="whiteAlpha.900" h="35px" w="35px" />
+			<Icon data-testid="inactive-icon" as={inactiveIcon} color="whiteAlpha.900" h="35px" w="35px" />
 		</Link>
 	)
 }

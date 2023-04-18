@@ -5,10 +5,6 @@ import {
 	HiOutlineTicket,
 	HiHome,
 	HiOutlineHome,
-	HiEmojiSad,
-	HiOutlineEmojiSad,
-	HiUserGroup,
-	HiOutlineUserGroup,
 	HiChartSquareBar,
 	HiOutlineChartSquareBar,
 } from "react-icons/hi"

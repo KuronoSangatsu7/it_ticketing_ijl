@@ -1,5 +1,4 @@
 import { Grid, GridItem } from "@chakra-ui/react"
-import { useAtom } from "jotai"
 import React from "react"
 import SideBar from "./SideBar/SideBar"
 

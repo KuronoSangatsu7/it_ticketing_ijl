@@ -8,37 +8,6 @@ import { ticketsAtom } from "../store/store"
 import { useNavigate } from "react-router-dom"
 import React from "react"
 
-// TODO: remove test data
-// const _tickets: ticketDetailsType[] = Object.values({
-// 	"1": {
-// 		assigned_tech: "Shelley Ginder",
-// 		department: "General Issues",
-// 		description:
-// 			"When I turn on my computer the lights flash and it turns off",
-// 		email: "fredrick.thompson@fakeitcompany.com",
-// 		employee_id: "33562",
-// 		first_name: "Fredrick",
-// 		last_name: "Thompson",
-// 		notes: "",
-// 		resolved: false,
-// 		symptom: "Computer wont turn on",
-// 		id: "1",
-// 	},
-// 	"5": {
-// 		assigned_tech: "Justin Sample",
-// 		department: "Network",
-// 		description: "I'm unable to receive emails",
-// 		email: "patsy.sheehan@fakeitcompany.com",
-// 		employee_id: "66722",
-// 		first_name: "Patsy",
-// 		last_name: "Sheehan",
-// 		notes: "",
-// 		resolved: true,
-// 		symptom: "Issues with email",
-// 		id: "5",
-// 	},
-// })
-
 export default function Tickets() {
 
 	const navigate = useNavigate()

@@ -30,15 +30,17 @@ export default function Header(props: {
 			alignItems="center"
 			flexDirection="column"
 			minHeight="75px"
+			data-testid="header"
 		>
-			<Flex w="full">
-				<Heading>
+			<Flex w="full" data-testid="header-flex">
+				<Heading data-testid="header-title">
 					{props.title}
 					{props.hasOwnProperty("itemId") ? (
 						<Text
 							as="span"
 							fontWeight="hairline"
 							fontSize={{ base: "sm", md: "xl" }}
+							data-testid="header-item-id"
 						>{` #${props.itemId}`}</Text>
 					) : (
 						<></>
@@ -54,14 +56,15 @@ export default function Header(props: {
 							textColor="whiteAlpha.900"
 							leftIcon={
 								props.hasOwnProperty("buttonIcon") ? (
-									<EditIcon />
+									<EditIcon data-testid="header-edit-icon" />
 								) : (
-									<AddIcon />
+									<AddIcon data-testid="header-add-icon" />
 								)
 							}
 							_hover={{ bg: "black" }}
 							w="156px"
 							onClick={() => props.onClick && props.onClick()}
+							data-testid="header-button"
 						>
 							{props.buttonName}
 						</Button>
@@ -73,9 +76,13 @@ export default function Header(props: {
 										color="whiteAlpha.900"
 										h="25px"
 										w="25px"
+										data-testid="header-edit-icon-mobile"
 									/>
 								) : (
-									<AddIcon color="whiteAlpha.900" />
+									<AddIcon
+										color="whiteAlpha.900"
+										data-testid="header-add-icon-mobile"
+									/>
 								)
 							}
 							borderRadius="full"
@@ -88,6 +95,7 @@ export default function Header(props: {
 							right="40px"
 							bottom="40px"
 							onClick={() => props.onClick && props.onClick()}
+							data-testid="header-button-mobile"
 						/>
 					</>
 				)}

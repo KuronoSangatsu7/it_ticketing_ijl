@@ -10,7 +10,6 @@ import {
 import { ticketDetailsType } from "../../types/ticketTypes"
 import {
 	EmailIcon,
-	ChevronRightIcon,
 	TimeIcon,
 	CheckIcon,
 } from "@chakra-ui/icons"
