@@ -11,6 +11,7 @@ type sideItemProps = {
 
 export default function SideItem({
 	pagePath,
+	pageTitle,
 	activeIcon,
 	inactiveIcon,
 }: sideItemProps) {
@@ -21,6 +22,7 @@ export default function SideItem({
 		<Link
 			as={RouterLink}
 			to={pagePath}
+			aria-label={pageTitle}
 			bg="activeItem"
 			h="50px"
 			display="flex"
@@ -41,6 +43,7 @@ export default function SideItem({
 		<Link
 			as={RouterLink}
 			to={pagePath}
+			aria-label={pageTitle}
 			h="50px"
 			display="flex"
 			alignItems="center"
