@@ -5,7 +5,7 @@
     "main": "./src/index.tsx",
     "scripts": {
         "test": "jest",
-        "coverage": "jest --coverage",
+        "coverage": "jest --collectCoverage=true",
         "start": "ijl-cli server --port=8099 --with-open-browser",
         "build": "npm run clean && ijl-cli build --dev",
         "build:prod": "npm run clean && ijl-cli build",
